@@ -42,3 +42,6 @@ next-env.d.ts
 
 # plantilla de variables (sí se sube)
 !.env.example
+
+# ajustes locales de Claude Code
+.claude/settings.local.json

@@ -295,9 +295,20 @@ Herramientas: listar productos, crear producto, generar ángulos, generar landin
 
 ## 14. Skills instaladas
 
-En `.claude/skills/`: karpathy, verification-before-completion, nextjs-typescript-tailwindcss-supabase, supabase-development, tailwindcss, zod-schema-validation, postgresql-best-practices, internationalization-i18n, ui-ux-pro-max, emil-design-eng, hallmark, form-cro, page-cro, landing-page-generator. Si una skill contradice este documento, manda este documento. El resto de skills está en `C:\Users\Programacion\skills` (instalar cuando se llegue a su fase: SEO, MCP, creativos).
+En `.claude/skills/`: karpathy, verification-before-completion, nextjs-typescript-tailwindcss-supabase, supabase-development, tailwindcss, zod-schema-validation, postgresql-best-practices, internationalization-i18n, ui-ux-pro-max, emil-design-eng, hallmark, form-cro, page-cro, landing-page-generator. Si una skill contradice este documento, manda este documento. La carpeta original con el resto de skills fue eliminada; las de SEO, MCP y creativos se descargan de nuevo cuando se llegue a su fase.
 
-## 15. Notas importantes
+## 15. Notas técnicas (Next.js 16)
+
+@AGENTS.md
+
+- `middleware` ahora se llama `proxy` (`src/proxy.ts`).
+- `cookies()`, `headers()`, `params` y `searchParams` son asíncronos: siempre con `await`.
+- Tipos `PageProps` / `LayoutProps` se generan con `npx next typegen` (también los genera `npm run build`).
+- shadcn/ui usa Base UI: para cambiar el elemento se usa la prop `render` (no `asChild`); en botones que son enlaces, `render={<Link href="..." />}` + `nativeButton={false}`.
+- Traducciones con next-intl, sin prefijo de idioma en la URL (idioma por cookie `NEXT_LOCALE`). Textos en `messages/es.json` y `messages/en.json`.
+- Estructura: `src/app/(marketing)` sitio público · `src/app/app` app del usuario · `src/app/admin` administrador · (fase 7) landings publicadas en `/{marca}/{producto}`: reservar los slugs `app`, `admin`, `api`.
+
+## 16. Notas importantes
 
 - La API de Dropi no está documentada públicamente. Se sabe que el token se genera en dropi.co → "Mis tiendas" → crear tienda. Construir la integración detrás de un adaptador y confirmar endpoints antes de implementarla.
 - Meta, Shopify y TikTok requieren aprobación de sus apps; construir primero con cuentas de desarrollo/prueba.

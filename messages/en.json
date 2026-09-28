@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "description": "Create AI landing pages, ad creatives and videos for your products and get cash-on-delivery orders."
+  },
+  "common": {
+    "pending": "To be confirmed",
+    "backHome": "Back to home"
+  },
+  "nav": {
+    "home": "Home",
+    "newProduct": "New product",
+    "newShort": "New",
+    "products": "My products",
+    "productsShort": "Products",
+    "orders": "Orders",
+    "creativeTests": "Creative tests",
+    "campaigns": "Campaigns",
+    "integrations": "Integrations",
+    "credits": "Credits",
+    "settings": "Settings",
+    "help": "Help",
+    "more": "More",
+    "moreTitle": "More options",
+    "main": "Main navigation"
+  },
+  "topbar": {
+    "credits": "Credits",
+    "creditsLabel": "Credit balance: {amount}",
+    "recharge": "Top up",
+    "accountMenu": "Account menu",
+    "profile": "Profile",
+    "billing": "Billing",
+    "signOut": "Sign out"
+  },
+  "home": {
+    "title": "Home",
+    "subtitle": "Create your next landing page in minutes.",
+    "newProduct": "New product",
+    "stats": {
+      "landings": "Published landings",
+      "ordersMonth": "Orders this month",
+      "credits": "Available credits"
+    },
+    "dropiTitle": "Connect your Dropi account",
+    "dropiText": "Import catalog products and send your orders automatically.",
+    "dropiAction": "Connect Dropi",
+    "recentTitle": "Recent products",
+    "recentEmptyTitle": "No products yet",
+    "recentEmptyText": "Upload a product photo, paste a link or import it from Dropi to get started."
+  },
+  "sections": {
+    "newProduct": "Upload a photo, paste a link or import from Dropi and AI analyzes your product.",
+    "products": "All your landings, creatives and videos in one place.",
+    "orders": "Receive orders, confirm them on WhatsApp and send them to Dropi.",
+    "creativeTests": "Test several creatives and find the winner.",
+    "campaigns": "Launch and manage your Meta and TikTok campaigns.",
+    "integrations": "Connect Dropi, Shopify, Meta, TikTok and WhatsApp.",
+    "credits": "Your balance, plan, packs and transactions.",
+    "settings": "Profile, brand, notifications, language and API keys.",
+    "help": "FAQ, tutorials and WhatsApp support."
+  },
+  "placeholder": {
+    "comingInPhase": "This section is built in phase {phase}."
+  },
+  "admin": {
+    "title": "Admin panel",
+    "subtitle": "Users, credits, pricing and margins."
+  },
+  "marketing": {
+    "tagline": "AI landing pages, creatives and videos to sell more, cash on delivery.",
+    "description": "Upload your product photo or import it from Dropi. AI writes your sales angles, landing page and ads. You get the orders.",
+    "openApp": "Open the dashboard",
+    "notice": "Temporary page. The full website is built in phase 12."
+  }
+}

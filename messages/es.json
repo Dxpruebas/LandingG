@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "description": "Crea landings, creativos y videos con IA para tus productos y recibe pedidos contra entrega."
+  },
+  "common": {
+    "pending": "Por confirmar",
+    "backHome": "Volver al inicio"
+  },
+  "nav": {
+    "home": "Inicio",
+    "newProduct": "Nuevo producto",
+    "newShort": "Nuevo",
+    "products": "Mis productos",
+    "productsShort": "Productos",
+    "orders": "Pedidos",
+    "creativeTests": "Pruebas de creativos",
+    "campaigns": "Campañas",
+    "integrations": "Integraciones",
+    "credits": "Créditos",
+    "settings": "Ajustes",
+    "help": "Ayuda",
+    "more": "Más",
+    "moreTitle": "Más opciones",
+    "main": "Navegación principal"
+  },
+  "topbar": {
+    "credits": "Créditos",
+    "creditsLabel": "Saldo de créditos: {amount}",
+    "recharge": "Recargar",
+    "accountMenu": "Menú de la cuenta",
+    "profile": "Perfil",
+    "billing": "Facturación",
+    "signOut": "Cerrar sesión"
+  },
+  "home": {
+    "title": "Inicio",
+    "subtitle": "Crea tu próxima landing en minutos.",
+    "newProduct": "Nuevo producto",
+    "stats": {
+      "landings": "Landings publicadas",
+      "ordersMonth": "Pedidos del mes",
+      "credits": "Créditos disponibles"
+    },
+    "dropiTitle": "Conecta tu cuenta de Dropi",
+    "dropiText": "Importa productos del catálogo y envía tus pedidos automáticamente.",
+    "dropiAction": "Conectar Dropi",
+    "recentTitle": "Últimos productos",
+    "recentEmptyTitle": "Aún no tienes productos",
+    "recentEmptyText": "Sube la foto de un producto, pega un link o impórtalo de Dropi para empezar."
+  },
+  "sections": {
+    "newProduct": "Sube una foto, pega un link o importa desde Dropi y la IA analiza tu producto.",
+    "products": "Todas tus landings, creativos y videos en un solo lugar.",
+    "orders": "Recibe, confirma por WhatsApp y envía tus pedidos a Dropi.",
+    "creativeTests": "Prueba varios creativos y encuentra el ganador.",
+    "campaigns": "Lanza y controla tus campañas de Meta y TikTok.",
+    "integrations": "Conecta Dropi, Shopify, Meta, TikTok y WhatsApp.",
+    "credits": "Tu saldo, plan, packs y movimientos.",
+    "settings": "Perfil, marca, notificaciones, idioma y claves API.",
+    "help": "Preguntas frecuentes, tutoriales y soporte por WhatsApp."
+  },
+  "placeholder": {
+    "comingInPhase": "Esta sección se construye en la fase {phase}."
+  },
+  "admin": {
+    "title": "Panel de administrador",
+    "subtitle": "Usuarios, créditos, precios y márgenes."
+  },
+  "marketing": {
+    "tagline": "Landings, creativos y videos con IA para vender más, contra entrega.",
+    "description": "Sube la foto de tu producto o impórtalo de Dropi. La IA crea tus ángulos de venta, tu landing y tus anuncios. Tú recibes los pedidos.",
+    "openApp": "Ver el panel",
+    "notice": "Vista temporal. El sitio completo se construye en la fase 12."
+  }
+}

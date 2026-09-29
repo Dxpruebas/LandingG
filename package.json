@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "db:aplicar": "supabase db push",
+    "db:tipos": "supabase gen types typescript --linked --schema public > src/lib/supabase/database.types.ts",
+    "db:prueba": "supabase db query --linked -f supabase/tests/seguridad.sql",
+    "db:revisar": "supabase db advisors --linked --level info"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

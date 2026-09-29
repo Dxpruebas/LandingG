@@ -308,7 +308,21 @@ En `.claude/skills/`: karpathy, verification-before-completion, nextjs-typescrip
 - Traducciones con next-intl, sin prefijo de idioma en la URL (idioma por cookie `NEXT_LOCALE`). Textos en `messages/es.json` y `messages/en.json`.
 - Estructura: `src/app/(marketing)` sitio público · `src/app/app` app del usuario · `src/app/admin` administrador · (fase 7) landings publicadas en `/{marca}/{producto}`: reservar los slugs `app`, `admin`, `api`.
 
-## 16. Notas importantes
+## 16. Base de datos (Fase 2)
+
+- Proyecto Supabase `pyqiwsztehqukemxvjrb` (East US), enlazado con la CLI (`npx supabase`, ya con sesión iniciada).
+- Migraciones en `supabase/migrations/`. **Nunca editar una migración ya aplicada**: crear un archivo nuevo con fecha posterior.
+- Comandos: `npm run db:aplicar` (subir migraciones) · `npm run db:tipos` (regenerar `src/lib/supabase/database.types.ts` tras cada cambio) · `npm run db:prueba` (prueba de seguridad RLS: todo debe decir OK) · `npm run db:revisar` (revisor de Supabase).
+- Tablas y columnas en español. Funciones internas de permisos en el esquema `privado` (`es_miembro`, `puede_editar`, `es_dueno`, `marca_de_ruta`).
+- Las tablas de contenido tienen `marca_id`; las hijas lo repiten con llave compuesta `(padre_id, marca_id)`.
+- Créditos: pertenecen a la cuenta (`usuario_id`); el saldo es la vista `saldos_creditos`. Las escrituras de créditos, pagos y generaciones NO se hacen desde el navegador (permisos revocados): van por funciones atómicas (fase 4) o por el servidor con la clave secreta.
+- `integraciones_secretos` y `cupones`: sin reglas a propósito (solo servidor).
+- Storage: bucket `archivos` (privado) y `publico` (imágenes de landings). Rutas `{marca_id}/...`.
+- Una cuenta nueva en Auth crea sola su perfil (`usuarios`) y su marca "Mi marca" (slug `marca-xxxxxxxxxx`).
+- Los pedidos de compradores y los eventos de landing los escribe el servidor (anti-spam), no el navegador.
+- Pendiente de definir: precio en créditos del video de 60 s; teléfono de pedidos acepta solo 10 dígitos (Colombia).
+
+## 17. Notas importantes
 
 - La API de Dropi no está documentada públicamente. Se sabe que el token se genera en dropi.co → "Mis tiendas" → crear tienda. Construir la integración detrás de un adaptador y confirmar endpoints antes de implementarla.
 - Meta, Shopify y TikTok requieren aprobación de sus apps; construir primero con cuentas de desarrollo/prueba.

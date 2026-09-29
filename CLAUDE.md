@@ -290,7 +290,7 @@ Herramientas: listar productos, crear producto, generar ángulos, generar landin
 - **Idiomas:** estructura de traducción desde el día 1 (archivos de mensajes), solo español activo al inicio.
 - **Componentes base:** shadcn/ui personalizado con el estilo del proyecto.
 - **Supabase:** proyecto en la nube (no local).
-- **Repositorio:** GitHub `Dxpruebas/Landing` (rama `main`), conectado a Vercel (despliegue automático).
+- **Repositorio:** GitHub `Dxpruebas/LandingG` (rama `main`, público), conectado a Vercel (despliegue automático).
 - **Honestidad en el contenido:** no inventar cifras, testimonios ni logos. Mientras no haya datos reales, usar espacios marcados "por confirmar".
 
 ## 14. Skills instaladas
